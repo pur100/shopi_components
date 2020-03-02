@@ -1,0 +1,77 @@
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="custom_moodboard">
+  <div class="mood_container">
+    <div class="mood_row_1">
+      <a href="{{section.settings.link_a}}" class="image_a" style="display:block;background-image: url('{{ section.settings.image_a }}'); color: transparent;">23h59</a>
+      <video  class="image_b" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+        <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+        <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+      </video>
+      <a href="{{section.settings.link_a}}" class="image_c" style="display:block;background-image: url('{{ section.settings.image_c }}'); color: transparent;">23h59</a>
+    </div>
+    <div class="mood_row_2">
+     <a href="{{section.settings.link_a}}" class="image_d" style="display:block;background-image: url('{{ section.settings.image_d }}'); color: transparent;">23h59</a>
+     <a href="{{section.settings.link_a}}" class="image_e" style="display:block;background-image: url('{{ section.settings.image_e }}'); color: transparent;">23h59</a>
+
+    </div>
+  </div>
+
+</section>
+
+
+{% schema %}
+{
+  "name": "Custom Moodboard",
+  "settings": [
+   {
+     "type": "text",
+     "id": "image_a",
+     "label": "Image a"
+   },
+   {
+     "type": "url",
+     "id": "link_a",
+     "label": "Link_a"
+     },
+    {
+      "type": "text",
+      "id": "image_b",
+      "label": "Image b"
+    },
+    {
+      "type": "url",
+      "id": "link_b",
+      "label": "Link_b"
+      },
+    {
+      "type": "text",
+      "id": "image_c",
+      "label": "Image c"
+    },
+    {
+      "type": "url",
+      "id": "link_c",
+      "label": "Link_c"
+      },
+    {
+      "type": "text",
+      "id": "image_d",
+      "label": "Image d"
+    },
+    {
+      "type": "url",
+      "id": "link_d",
+      "label": "Link_d"
+      },
+    {
+      "type": "text",
+      "id": "image_e",
+      "label": "Image e"
+    },
+    {
+      "type": "url",
+      "id": "link_e",
+      "label": "Link_e"
+      }
+    ]
+}
+{% endschema %}

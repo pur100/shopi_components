@@ -1,0 +1,18 @@
+{% for tag in product.tags %}
+  {% if tag contains "border" %}
+    <style>
+         body {
+           padding: 15px;
+           background-color: {{ tag | replace: 'border-', '' }} !important;
+         }
+
+
+       </style>
+  {% elsif tag contains "logo" %}
+        <style>
+          .Header__LogoLink .Heading {
+             color: {{ tag | replace: 'logo-', '' }} !important;
+          }
+        </style>
+  {% endif %}
+{% endfor %}

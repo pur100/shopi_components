@@ -1,0 +1,48 @@
+// MOODBOARD //
+
+  #shopify-section-custom_moodboard {
+    margin-top: 50px;
+
+    .mood_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .mood_row_1 {
+      height: 66%;
+    }
+
+    .mood_row_2 {
+      height: 34%;
+    }
+
+    .mood_row_1, .mood_row_2 {
+      display:flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    .image_a, .image_c {
+      width: 20%;
+      height: 25vw;
+      margin: 5px;
+      object-fit: cover;
+    }
+
+    .image_b {
+      height: 25vw;
+      width: 60%;
+      margin: 5px;
+      object-fit: cover;
+    }
+
+    .image_e, .image_d {
+      height: 15vw;
+      width: 50%;
+      margin: 5px;
+      object-fit: cover;
+    }
+  }
+
